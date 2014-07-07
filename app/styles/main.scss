@@ -1,0 +1,250 @@
+// bower:scss
+// endbower
+
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "../../bower_components/foundation/scss/foundation";
+
+
+/* Full-width grid. Add this to the row. */
+.full-width {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
+.tabs-content {
+  background: #fff;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+
+/* OpenPlans Top Bar */
+
+.openplans-top-bar,
+.openplans-top-bar.contain-to-grid {
+  background-color: transparent;
+  box-shadow: 0 5px 0 rgba(51,51,51,0.2);
+  position: relative;
+  z-index: 99;
+  .right {
+    padding-right: 0.5rem;
+  }
+  .avatar {
+    width: 35px;
+    height: 35px;
+    max-width: none;
+    border-radius: 0;
+    float: left;
+    margin: 5px 0 0 -10px;
+  }
+}
+.openplans-top-bar.fixed {
+  position: fixed;
+}
+.openplans-top-bar .top-bar {
+  background: transparent url(//openplans.org/static/images/orange-ff8b38-2000x65.gif) 0 0 no-repeat scroll;
+  box-shadow: 62.5rem 0 #ff8b38, -62.5rem 0 #ff8b38;
+}
+.openplans-top-bar,
+.openplans-top-bar.contain-to-grid,
+.openplans-top-bar .top-bar,
+.openplans-top-bar .name {
+  height: 65px;
+  line-height: 65px;
+}
+.openplans-top-bar .name h1,
+.openplans-top-bar .name h1 a {
+  height: 100%;
+  padding: 0;
+}
+.openplans-top-bar .name h1 a:hover {
+  background-color: #cceeff;
+}
+.openplans-logo-hole {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+.openplans-top-bar .top-bar-section {
+  padding-top: 10px;
+}
+.openplans-top-bar .top-bar-section ul li > a,
+.openplans-top-bar .top-bar-section ul,
+.openplans-top-bar .top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: #ff8b38;
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+}
+.openplans-top-bar .top-bar-section li.active:not(.has-form) a:not(.button) {
+  background-color: #308fbf;
+}
+.openplans-top-bar .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+  background-color: #3db6f2;
+}
+.openplans-top-bar .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+  background: #308fbf;
+}
+.openplans-top-bar .top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: #3db6f2;
+}
+.openplans-top-bar .top-bar.expanded .title-area {
+  background-color: transparent;
+}
+.openplans-top-bar .top-bar.expanded {
+  height: auto;
+}
+.openplans-top-bar .top-bar.expanded .top-bar-section {
+  padding-top: 0;
+}
+
+
+
+.extra-margin-top {
+  margin-top: 2rem;
+}
+.extra-margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.panel > .page-list-header {
+  margin: emCalc(-20px) emCalc(-20px) 0;
+  padding: emCalc(10px) emCalc(20px);
+  background-color: $body-font-color;
+  color: $body-bg;
+  .button.tiny {
+    margin-top: -0.25rem;
+    margin-right: -0.75rem;
+  }
+}
+.page-list {
+  > li {
+    margin: 0 emCalc(-10px);
+    padding: emCalc(10px) emCalc(10px);
+    position: relative;
+    top: emCalc(10px);
+    border-radius: $global-radius;
+    &:hover {
+      background-color: $body-bg;
+    }
+    .title {
+      font-size: rem-calc(23);
+    }
+    .switch  {
+      font-size: rem-calc(13);
+      label {
+        margin-bottom: 0;
+      }
+    }
+    .f-dropdown {
+      margin-left: 0;
+    }
+    .tally {
+      min-width: 4rem;
+      > * {
+        display: block;
+      }
+      .count {
+        font-size: rem-calc(23);
+      }
+      .unit {
+        font-size: rem-calc(13);
+        margin-top: -0.375rem;
+      }
+    }
+    .avatar {
+      max-width: 4rem;
+      margin-right: 0.75rem;
+    }
+  }
+}
+
+.slug {
+  display: block;
+  font-size: rem-calc(13);
+}
+
+.edit-member-link {
+  font-size: rem-calc(37);
+  margin: 0.625rem;
+  position: relative;
+  top: 0.25rem;
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  margin: 0 0.25rem;
+  opacity: 0.3;
+  a:hover & {
+    opacity: 1;
+  }
+//  background-color: #f7f7f7;
+  &.gear {
+//    background-color: #999;
+    border: 0.375em solid #999;
+    border-radius: 100%;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 0.25em;
+      height: 0.25em;
+      background-color: #999;
+      position: absolute;
+      top: -0.5em;
+      left: 50%;
+      margin-left: -0.125em;
+      box-shadow: 0 1em 0 #999, 0.5em 0.5em 0 #999, -0.5em 0.5em 0 #999;
+    }
+    &:after {
+      transform: rotate(45deg);
+      transform-origin: 0.125em 0.625em;
+    }
+  }
+  &.pencil {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    top: 0.125em;
+    &:before {
+      content: '';
+      display: block;
+      border: 0.15em solid #999;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-bottom-width: 0;
+      margin-left: -0.15em;
+      margin-bottom: -0.1em;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+    }
+    &:after {
+      content: '';
+      display: block;
+      background-color: Gold;
+      width: 0.4em;
+      height: 0.65em;
+      margin-left: -0.2em;
+      margin-top: 0.2em;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      box-shadow: 0 -0.2em 0 Pink;
+    }
+  }
+  
+}
+

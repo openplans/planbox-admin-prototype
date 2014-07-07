@@ -1,0 +1,211 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>planbox admin prototype</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="-contain-to-grid sticky openplans-top-bar">
+      <nav class="top-bar" data-topbar="">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/"><img src="//openplans.org/static/images/openplans-logo-hole.png" class="openplans-logo-hole"></a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <ul class="right">
+            <li><a href="http://blog.openplans.org/">Blog</a></li>
+            <li><a href="http://community.openplans.org/">Community</a></li>
+            <li class="has-dropdown not-click">
+              <a href="/about/">About</a>
+              <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+                <li><a href="/about/">About OpenPlans</a></li>
+                <li><a href="/shareabouts/">Shareabouts</a></li>
+                <li><a href="/open-source/">Open Source</a></li>
+              </ul>
+            </li>
+            <li class="active has-dropdown not-click">
+              <a href="index.html" class="disabled"><img class="avatar" src="//pbs.twimg.com/profile_images/481901049112846336/lMzPGnqn.png">&nbsp;</a>
+              <ul class="dropdown">
+                <li><a href="index.html">andycochran</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <form>
+
+      <section class="project-section">
+        <div class="row full-width">
+          <div class="large-7 columns">
+
+            <fieldset>
+              <legend>Project Header</legend>
+              <label>Title
+                <input type="text" placeholder="" />
+              </label>
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Replace Title with a Logo Image</label>
+              <label>Tagline
+                <input type="text" placeholder="" />
+              </label>
+              <label>Description
+                <textarea placeholder="" rows="9"></textarea>
+              </label>
+            </fieldset>
+
+          </div>
+          <div class="show-for-large-up extra-margin-top large-5 columns">
+
+            <ul class="tabs" data-tab>
+              <li class="tab-title active"><a href="#panel1-1">Title</a></li>
+              <li class="tab-title"><a href="#panel1-2">Description</a></li>
+              <li class="tab-title"><a href="#panel1-3">Preview</a></li>
+            </ul>
+            <div class="tabs-content">
+              <div class="content active" id="panel1-1">
+                <h5>How To Name The Project</h5>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="content" id="panel1-2">
+                <h5>How To Write a Good Project Description</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="content" id="panel1-3">
+                <img src="//placehold.it/700x500&text=PREVIEW">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="row collapse full-width">
+        <div class="small-4 large-2 columns">
+          <hr>
+        </div>
+        <div class="small-4 large-2 columns text-right">
+          <a href="#" class="button secondary small expand">Insert Section</a>
+        </div>
+        <div class="small-4 large-8 columns">
+          <hr>
+        </div>
+      </div>
+
+      <section class="project-section">
+        <div class="row full-width">
+          <div class="large-7 columns">
+
+            <fieldset>
+              <legend>Text Section</legend>
+              <label>Title
+                <input type="text" placeholder="" />
+              </label>
+              <div class="row full-width">
+                <div class="medium-4 columns">
+                  <input id="checkbox1" type="checkbox"><label for="checkbox1" class="inline">Include In Menu</label>
+                </div>
+                <div class="medium-8 columns">
+                  <div class="row collapse">
+                    <div class="small-5 columns">
+                      <span class="prefix radius">Menu Label</span>
+                    </div>
+                    <div class="small-7 columns">
+                      <input type="text" placeholder="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label>Text Block
+                <textarea placeholder="" rows="9"></textarea>
+              </label>
+            </fieldset>
+
+          </div>
+          <div class="show-for-large-up extra-margin-top large-5 columns">
+
+            <ul class="tabs" data-tab>
+              <li class="tab-title active"><a href="#panel2-1">Text Section</a></li>
+              <li class="tab-title"><a href="#panel2-2">Preview</a></li>
+            </ul>
+            <div class="tabs-content">
+              <div class="content active" id="panel2-1">
+                <h5>Text Editor Tips</h5>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="content" id="panel2-2">
+                <img src="//placehold.it/700x500&text=PREVIEW">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="row collapse full-width">
+        <div class="small-4 large-2 columns">
+          <hr>
+        </div>
+        <div class="small-4 large-2 columns text-right">
+          <a href="#" class="button secondary small expand">Insert Section</a>
+        </div>
+        <div class="small-4 large-8 columns">
+          <hr>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="../bower_components/foundation/js/foundation.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
