@@ -62,50 +62,201 @@
       </nav>
     </div>
 
-    <form>
+    <form class="">
 
-      <section class="project-section">
-        <div class="row full-width">
-          <div class="medium-8 columns">
+      <div class="row full-width">
+        <div class="medium-8 columns">
 
-            <fieldset>
-              <div class="panel radius">
+          <section class="project-section">
+            <fieldset class="panel radius">
+              <div class="section-settings panel radius">
                 <input id="add-cover-image" type="checkbox"><label for="add-cover-image">Add Cover Image</label><br>
                 <input id="add-logo" type="checkbox"><label for="add-logo">Replace Title with Logo Image</label>
               </div>
-              <!-- <legend>Project Header</legend> -->
-              <label>Title
-                <input type="text" placeholder="" />
+              <label>Project Title
+                <input type="text" placeholder="Project" class="heading-input" />
               </label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Replace Title with a Logo Image</label>
               <label>Tagline
-                <small>This is also the description that shows us in web searches and social media links</small>
-                <input type="text" placeholder="" />
+                <small>Also web search &amp; social media description</small>
+                <input type="text" placeholder="This is an engaging Tagline!" class="sub-heading-input" />
               </label>
+              <label class="unassigned">Call-to-Action Buttons</label>
+              <div class="row collapse">
+                <div class="medium-6 columns">
+                  <input type="text" value="Get Involved" />
+                </div>
+                <div class="medium-6 columns">
+                  <select>
+                    <option value="husker" selected>Get Involved</option>
+                    <option value="husker">The Plan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="medium-6 columns">
+                  <input type="text" value="Learn More" />
+                </div>
+                <div class="medium-6 columns">
+                  <select>
+                    <option value="husker">Get Involved</option>
+                    <option value="husker" selected>The Plan</option>
+                  </select>
+                </div>
+              </div>
             </fieldset>
+          </section>
 
+          <div class="section-insert">
+            <div class="row collapse full-width">
+              <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
+                <a href="#" class="button secondary small expand radius" data-dropdown="section-type-selector">Insert</a>
+                <ul id="section-type-selector" class="f-dropdown" data-dropdown-content><li><a href="#">Text Section</a></li><li><a href="#">Image</a></li><li><a href="#">Timeline</a></li></ul>
+              </div><div class="small-2 medium-4 columns"><hr></div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <div class="row collapse full-width">
-        <div class="small-2 medium-2 columns"><hr></div>
-        <div class="small-8 medium-3 columns">
-          <a href="#" class="button split secondary small expand radius" data-dropdown="section-type-selector">Insert</a>
-          <ul id="section-type-selector" class="f-dropdown" data-dropdown-content>
-            <li><a href="#">Text Section</a></li>
-            <li><a href="#">Image</a></li>
-            <li><a href="#">Timeline</a></li>
-          </ul>
+          <section class="project-section">
+            <fieldset class="panel radius">
+              <div class="section-settings panel radius">
+                <input type="radio" name="textsection-1-layout" value="textsection-1-sidebar" id="textsection-1-sidebar" checked="checked"><label for="textsection-1-sidebar">Sidebar</label>
+                <input type="radio" name="textsection-1-layout" value="textsection-1-twocolumn" id="textsection-1-twocolumn"><label for="textsection-1-twocolumn">Two-Column</label>
+                <div class="row collapse">
+                  <div class="small-3 columns">
+                    <span class="prefix radius">Menu</span>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="text" id="textsection-1-slug" placeholder="Leave blank to exclude from menu" value="The Plan">
+                  </div>
+                </div>
+              </div>
+              <label>Section Heading
+                <input type="text" placeholder="Section Heading" class="sub-heading-input" value="The Plan" />
+              </label>
+              <div class="row">
+                <div class="large-3 columns">
+                  <textarea rows="10">This is a Pen editor. </textarea>
+                </div>
+                <div class="large-9 columns">
+                  <textarea rows="10">This is a Pen editor. And the text is an example of a good project description. </textarea>
+                </div>
+              </div>
+            </fieldset>
+          </section>
+
+          <div class="section-insert">
+            <div class="row collapse full-width">
+              <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
+                <a href="#" class="button secondary small expand radius" data-dropdown="section-type-selector">Insert</a>
+              </div><div class="small-2 medium-4 columns"><hr></div>
+            </div>
+          </div>
+
+          <section class="project-section">
+            <fieldset class="panel radius">
+              <div class="section-settings panel radius">
+                <input type="radio" name="textsection-2-layout" value="textsection-2-sidebar" id="textsection-2-sidebar"><label for="textsection-2-sidebar">Sidebar</label>
+                <input type="radio" name="textsection-2-layout" value="textsection-2-twocolumn" id="textsection-2-twocolumn" checked="checked"><label for="textsection-2-twocolumn">Two-Column</label>
+                <div class="row collapse">
+                  <div class="small-3 columns">
+                    <span class="prefix radius">Menu</span>
+                  </div>
+                  <div class="small-9 columns">
+                    <input type="text" id="textsection-1-slug" placeholder="Leave blank to exclude from menu" value="Get Involved">
+                  </div>
+                </div>
+              </div>
+              <label>Section Heading
+                <input type="text" placeholder="Section Heading" class="sub-heading-input" value="Get Involved!" />
+              </label>
+              <div class="row">
+                <div class="large-6 columns">
+                  <textarea rows="10">This is a Pen editor. </textarea>
+                </div>
+                <div class="large-6 columns">
+                  <textarea rows="10">This is a Pen editor. And the text is an example of how to get envolved. </textarea>
+                </div>
+              </div>
+            </fieldset>
+          </section>
+
+          <div class="section-insert">
+            <div class="row collapse full-width">
+              <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
+                <a href="#" class="button secondary small expand radius" data-dropdown="section-type-selector">Insert</a>
+              </div><div class="small-2 medium-4 columns"><hr></div>
+            </div>
+          </div>
+
+          <section class="project-section">
+            <fieldset class="section-settings panel radius">
+              <div class="section-switch switch left">
+                <input id="shareabouts-switch" type="checkbox">
+                <label for="shareabouts-switch"></label>
+              </div>
+              <label class="inline unassigned">Enable Shareabouts</label>
+              <div class="shareabouts-switch-target hide">
+                <label class="unassigned">Pan/zoom the map to show your project area.</label>
+                <img src="http://placehold.it/1000x450&text=map">
+              </div>
+            </fieldset>
+          </section>
+
+          <section class="project-section">
+            <fieldset class="section-settings panel radius">
+              <label class="unassigned">Add the URLs of your social network pages.</label>
+              <br>
+              <div class="row collapse">
+                <div class="small-3 columns">
+                  <span class="prefix radius">Facebook</span>
+                </div>
+                <div class="small-9 columns">
+                  <input type="text" id="facebook-url" placeholder="">
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="small-3 columns">
+                  <span class="prefix radius">Instagram</span>
+                </div>
+                <div class="small-9 columns">
+                  <input type="text" id="instagram-url" placeholder="">
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="small-3 columns">
+                  <span class="prefix radius">Twitter</span>
+                </div>
+                <div class="small-9 columns">
+                  <input type="text" id="twitter-url" placeholder="">
+                </div>
+              </div>
+            </fieldset>
+          </section>
+
+          <section class="project-section">
+            <fieldset class="section-settings panel radius">
+              <label class="unassigned">Contact/Copyright Information</label>
+              <textarea rows="4">This should actually be a Pen editor.</textarea>
+            </fieldset>
+          </section>
+
         </div>
-        <div class="small-2 medium-7 columns"><hr></div>
       </div>
 
       <div class="project-settings-container">
-        <button class="button disabled expand radius">Save</button>
+        <button class="button expand radius">Save</button>
+        <div class="project-settings panel radius">
+          <p class="clearfix">
+            <a href="#" target="_blank" class="left">View Project &rarr;</a>
+            <a class="project-settings-toggle right" href="#"><span class="icon gear"></span></a>
+          </p>
+          <hr class="project-setting hide">
+          <p class="project-setting hide"><a href="#" class="button tiny">Request a custom URL</a></p>
+        </div>
       </div>
 
     </form>
+
+    <br><br><br><br><br><br><br>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
