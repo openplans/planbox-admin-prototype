@@ -248,3 +248,20 @@
   
 }
 
+fieldset {
+  background-color: #fff;
+  .panel {
+    background-color: #f9f9f9;
+  }
+}
+
+.project-settings-container {
+  padding: $tabs-content-padding;
+  @media #{$medium-up} {
+    position: absolute;
+    top: 65px;
+    left: 66.66667%;
+    margin: 1.5rem 0;
+    width: 33.33333%;
+  }
+}

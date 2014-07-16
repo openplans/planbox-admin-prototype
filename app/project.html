@@ -50,7 +50,7 @@
               </ul>
             </li>
             <li class="active has-dropdown not-click">
-              <a href="index.html" class="disabled"><img class="avatar" src="//pbs.twimg.com/profile_images/481901049112846336/lMzPGnqn.png">&nbsp;</a>
+              <a href="index.html" class="disabled"><img class="avatar" src="//pbs.twimg.com/profile_images/486195376077029377/U1cXHuNZ_400x400.jpeg">&nbsp;</a>
               <ul class="dropdown">
                 <li><a href="index.html">andycochran</a></li>
                 <li><a href="#">Change Password</a></li>
@@ -66,120 +66,43 @@
 
       <section class="project-section">
         <div class="row full-width">
-          <div class="large-7 columns">
+          <div class="medium-8 columns">
 
             <fieldset>
-              <legend>Project Header</legend>
+              <div class="panel radius">
+                <input id="add-cover-image" type="checkbox"><label for="add-cover-image">Add Cover Image</label><br>
+                <input id="add-logo" type="checkbox"><label for="add-logo">Replace Title with Logo Image</label>
+              </div>
+              <!-- <legend>Project Header</legend> -->
               <label>Title
                 <input type="text" placeholder="" />
               </label>
               <input id="checkbox1" type="checkbox"><label for="checkbox1">Replace Title with a Logo Image</label>
               <label>Tagline
+                <small>This is also the description that shows us in web searches and social media links</small>
                 <input type="text" placeholder="" />
               </label>
-              <label>Description
-                <textarea placeholder="" rows="9"></textarea>
-              </label>
             </fieldset>
-
-          </div>
-          <div class="show-for-large-up extra-margin-top large-5 columns">
-
-            <ul class="tabs" data-tab>
-              <li class="tab-title active"><a href="#panel1-1">Title</a></li>
-              <li class="tab-title"><a href="#panel1-2">Description</a></li>
-              <li class="tab-title"><a href="#panel1-3">Preview</a></li>
-            </ul>
-            <div class="tabs-content">
-              <div class="content active" id="panel1-1">
-                <h5>How To Name The Project</h5>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-              <div class="content" id="panel1-2">
-                <h5>How To Write a Good Project Description</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <div class="content" id="panel1-3">
-                <img src="//placehold.it/700x500&text=PREVIEW">
-              </div>
-            </div>
 
           </div>
         </div>
       </section>
 
       <div class="row collapse full-width">
-        <div class="small-4 large-2 columns">
-          <hr>
+        <div class="small-2 medium-2 columns"><hr></div>
+        <div class="small-8 medium-3 columns">
+          <a href="#" class="button split secondary small expand radius" data-dropdown="section-type-selector">Insert</a>
+          <ul id="section-type-selector" class="f-dropdown" data-dropdown-content>
+            <li><a href="#">Text Section</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Timeline</a></li>
+          </ul>
         </div>
-        <div class="small-4 large-2 columns text-right">
-          <a href="#" class="button secondary small expand">Insert Section</a>
-        </div>
-        <div class="small-4 large-8 columns">
-          <hr>
-        </div>
+        <div class="small-2 medium-7 columns"><hr></div>
       </div>
 
-      <section class="project-section">
-        <div class="row full-width">
-          <div class="large-7 columns">
-
-            <fieldset>
-              <legend>Text Section</legend>
-              <label>Title
-                <input type="text" placeholder="" />
-              </label>
-              <div class="row full-width">
-                <div class="medium-4 columns">
-                  <input id="checkbox1" type="checkbox"><label for="checkbox1" class="inline">Include In Menu</label>
-                </div>
-                <div class="medium-8 columns">
-                  <div class="row collapse">
-                    <div class="small-5 columns">
-                      <span class="prefix radius">Menu Label</span>
-                    </div>
-                    <div class="small-7 columns">
-                      <input type="text" placeholder="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <label>Text Block
-                <textarea placeholder="" rows="9"></textarea>
-              </label>
-            </fieldset>
-
-          </div>
-          <div class="show-for-large-up extra-margin-top large-5 columns">
-
-            <ul class="tabs" data-tab>
-              <li class="tab-title active"><a href="#panel2-1">Text Section</a></li>
-              <li class="tab-title"><a href="#panel2-2">Preview</a></li>
-            </ul>
-            <div class="tabs-content">
-              <div class="content active" id="panel2-1">
-                <h5>Text Editor Tips</h5>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-              <div class="content" id="panel2-2">
-                <img src="//placehold.it/700x500&text=PREVIEW">
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <div class="row collapse full-width">
-        <div class="small-4 large-2 columns">
-          <hr>
-        </div>
-        <div class="small-4 large-2 columns text-right">
-          <a href="#" class="button secondary small expand">Insert Section</a>
-        </div>
-        <div class="small-4 large-8 columns">
-          <hr>
-        </div>
+      <div class="project-settings-container">
+        <button class="button disabled expand radius">Save</button>
       </div>
 
     </form>

@@ -543,14 +543,14 @@
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
 // $fieldset-border-width: 1px;
- $fieldset-border-color: #ccc;
+ $fieldset-border-color: transparent;
 // $fieldset-padding: rem-calc(20);
 // $fieldset-margin: rem-calc(18 0);
 
 // We use these to style the legends when you use them
- $legend-bg: transparent;
-// $legend-font-weight: $font-weight-bold;
-// $legend-padding: rem-calc(0 3);
+ $legend-bg: #fff;
+ $legend-font-weight: 400;
+ $legend-padding: rem-calc(4 8);
 
 // We use these to style the prefix and postfix input elements
 // $input-prefix-bg: scale-color(#fff, $lightness: -5%);
