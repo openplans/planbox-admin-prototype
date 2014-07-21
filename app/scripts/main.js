@@ -39,3 +39,12 @@ $('#add-call-to-action').click(function() {
     $('.call-to-action-buttons').toggle('fast');
 });
 
+$('input.textsection-twocolumn').click(function() {
+    $(this).parents('fieldset').find('.pen-container-1').removeClass('large-3').addClass('large-6');
+    $(this).parents('fieldset').find('.pen-container-2').removeClass('large-9').addClass('large-6');
+});
+$('input.textsection-sidebar').click(function() {
+    $(this).parents('fieldset').find('.pen-container-1').removeClass('large-6').addClass('large-3');
+    $(this).parents('fieldset').find('.pen-container-2').removeClass('large-6').addClass('large-9');
+});
+
