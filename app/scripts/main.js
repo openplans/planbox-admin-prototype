@@ -48,3 +48,7 @@ $('input.textsection-sidebar').click(function() {
     $(this).parents('fieldset').find('.pen-container-2').removeClass('large-6').addClass('large-9');
 });
 
+$('#limited-text-1').keyup(function() {
+    var len = $('#limited-text-1').val().length;
+    $('#limited-text-1-counter').text( 99 - len );
+});

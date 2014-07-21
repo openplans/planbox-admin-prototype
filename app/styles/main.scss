@@ -266,6 +266,14 @@ input[type=text].sub-heading-input {
     font-weight: bold;
   }
 }
+span.sub-heading-postfix {
+  color: #999;
+  @media #{$medium-up} {
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 0.75rem;
+    height: 3.625rem;
+  }
+}
 
 .section-settings-toggle-container {
   position: relative;
