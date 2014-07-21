@@ -25,3 +25,17 @@ $('.project-settings-toggle').click(function(event) {
 $('#shareabouts-switch').click(function() {
     $('.shareabouts-switch-target').toggle('fast');
 });
+
+$('.section-settings-toggle').click(function(event) {
+    event.preventDefault();
+    $(this).parents('fieldset').find('.section-settings').toggleClass('hide');
+});
+
+$('.cover-image-switch').click(function() {
+    $('.cover-image-container').toggle('fast');
+});
+
+$('#add-call-to-action').click(function() {
+    $('.call-to-action-buttons').toggle('fast');
+});
+

@@ -69,38 +69,49 @@
 
           <section class="project-section">
             <fieldset class="panel radius">
-              <div class="section-settings panel radius">
-                <input id="add-cover-image" type="checkbox"><label for="add-cover-image">Add Cover Image</label><br>
-                <input id="add-logo" type="checkbox"><label for="add-logo">Replace Title with Logo Image</label>
+              <div class="section-settings-toggle-container text-right"><a class="section-settings-toggle" href="#"><span class="icon gear"></span></a></div>
+              <div class="section-settings panel radius hide">
+                <input id="add-cover-image" type="checkbox" class="cover-image-switch"><label>Add Cover Image</label><br>
+                <input id="add-logo" type="checkbox"><label for="add-logo">Replace Title with Logo Image</label><br>
+                <input id="add-call-to-action" type="checkbox" checked="checked"><label for="add-logo">Use Call-to-action Buttons</label>
+              </div>
+              <div class="cover-image-container hide">
+                <img src="http://placehold.it/2390x1000&text=sample+photo+at+2.39:1+aspect+ratio" class="cover-image">
+                <div class="drag-area text-center">
+                  <p>Drop cover photo here or&hellip;</p>
+                  <a href="#" class="button tiny radius">Choose File</a>
+                </div>
               </div>
               <label>Project Title
                 <input type="text" placeholder="Project" class="heading-input" />
               </label>
               <label>Tagline
-                <small>Also web search &amp; social media description</small>
+                <!-- <small>Also web search &amp; social media description</small> -->
                 <input type="text" placeholder="This is an engaging Tagline!" class="sub-heading-input" />
               </label>
-              <label class="unassigned">Call-to-Action Buttons</label>
-              <div class="row collapse">
-                <div class="medium-6 columns">
-                  <input type="text" value="Get Involved" />
+              <div class="call-to-action-buttons">
+                <label class="unassigned">Call-to-Action Buttons</label>
+                <div class="row collapse">
+                  <div class="medium-6 columns">
+                    <input type="text" value="Get Involved" />
+                  </div>
+                  <div class="medium-6 columns">
+                    <select>
+                      <option value="husker" selected>Get Involved</option>
+                      <option value="husker">The Plan</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="medium-6 columns">
-                  <select>
-                    <option value="husker" selected>Get Involved</option>
-                    <option value="husker">The Plan</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row collapse">
-                <div class="medium-6 columns">
-                  <input type="text" value="Learn More" />
-                </div>
-                <div class="medium-6 columns">
-                  <select>
-                    <option value="husker">Get Involved</option>
-                    <option value="husker" selected>The Plan</option>
-                  </select>
+                <div class="row collapse">
+                  <div class="medium-6 columns">
+                    <input type="text" value="Learn More" />
+                  </div>
+                  <div class="medium-6 columns">
+                    <select>
+                      <option value="husker">Get Involved</option>
+                      <option value="husker" selected>The Plan</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </fieldset>
@@ -109,7 +120,7 @@
           <div class="section-insert">
             <div class="row collapse full-width">
               <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
-                <a href="#" class="button secondary small expand radius" data-dropdown="section-type-selector">Insert</a>
+                <a href="#" class="button small expand radius" data-dropdown="section-type-selector">Add New Section</a>
                 <ul id="section-type-selector" class="f-dropdown" data-dropdown-content><li><a href="#">Text Section</a></li><li><a href="#">Image</a></li><li><a href="#">Timeline</a></li></ul>
               </div><div class="small-2 medium-4 columns"><hr></div>
             </div>
@@ -117,15 +128,20 @@
 
           <section class="project-section">
             <fieldset class="panel radius">
-              <div class="section-settings panel radius">
-                <input type="radio" name="textsection-1-layout" value="textsection-1-sidebar" id="textsection-1-sidebar" checked="checked"><label for="textsection-1-sidebar">Sidebar</label>
-                <input type="radio" name="textsection-1-layout" value="textsection-1-twocolumn" id="textsection-1-twocolumn"><label for="textsection-1-twocolumn">Two-Column</label>
-                <div class="row collapse">
-                  <div class="small-3 columns">
-                    <span class="prefix radius">Menu</span>
+              <div class="section-settings-toggle-container text-right"><a class="section-settings-toggle" href="#"><span class="icon gear"></span></a></div>
+              <div class="section-settings panel radius hidexxxxxx">
+                <div class="row">
+                  <div class="medium-5 columns">
+                    <p class="radio-images text-section-layouts">
+                      <label class="unassigned">Layout</label>
+                      <input type="radio" name="textsection-1-layout" value="textsection-1-sidebar" id="textsection-1-sidebar" checked="checked"><label for="textsection-1-sidebar"><img src="images/text-section-sidebar.gif"><small class="label-text">Sidebar</small></label>
+                      <input type="radio" name="textsection-1-layout" value="textsection-1-twocolumn" id="textsection-1-twocolumn"><label for="textsection-1-twocolumn"><img src="images/text-section-2col.gif"><small class="label-text">Two-Column</small></label>
+                    </p>
                   </div>
-                  <div class="small-9 columns">
-                    <input type="text" id="textsection-1-slug" placeholder="Leave blank to exclude from menu" value="The Plan">
+                  <div class="medium-7 columns">
+                    <label>Project Title
+                      <input type="text" id="textsection-1-slug" placeholder="Leave blank to exclude from menu" value="The Plan">
+                      </label>
                   </div>
                 </div>
               </div>
@@ -146,14 +162,15 @@
           <div class="section-insert">
             <div class="row collapse full-width">
               <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
-                <a href="#" class="button secondary small expand radius" data-dropdown="section-type-selector">Insert</a>
+                <a href="#" class="button small expand radius" data-dropdown="section-type-selector">Add New Section</a>
               </div><div class="small-2 medium-4 columns"><hr></div>
             </div>
           </div>
 
           <section class="project-section">
             <fieldset class="panel radius">
-              <div class="section-settings panel radius">
+              <div class="section-settings-toggle-container text-right"><a class="section-settings-toggle" href="#"><span class="icon gear"></span></a></div>
+              <div class="section-settings panel radius hide">
                 <input type="radio" name="textsection-2-layout" value="textsection-2-sidebar" id="textsection-2-sidebar"><label for="textsection-2-sidebar">Sidebar</label>
                 <input type="radio" name="textsection-2-layout" value="textsection-2-twocolumn" id="textsection-2-twocolumn" checked="checked"><label for="textsection-2-twocolumn">Two-Column</label>
                 <div class="row collapse">
@@ -182,7 +199,7 @@
           <div class="section-insert">
             <div class="row collapse full-width">
               <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
-                <a href="#" class="button secondary small expand radius" data-dropdown="section-type-selector">Insert</a>
+                <a href="#" class="button small expand radius" data-dropdown="section-type-selector">Add New Section</a>
               </div><div class="small-2 medium-4 columns"><hr></div>
             </div>
           </div>
@@ -193,7 +210,7 @@
                 <input id="shareabouts-switch" type="checkbox">
                 <label for="shareabouts-switch"></label>
               </div>
-              <label class="inline unassigned">Enable Shareabouts</label>
+              <label class="inline unassigned">Add a Shareabouts Map</label>
               <div class="shareabouts-switch-target hide">
                 <label class="unassigned">Pan/zoom the map to show your project area.</label>
                 <img src="http://placehold.it/1000x450&text=map">
@@ -210,7 +227,7 @@
                   <span class="prefix radius">Facebook</span>
                 </div>
                 <div class="small-9 columns">
-                  <input type="text" id="facebook-url" placeholder="">
+                  <input type="text" id="facebook-url" placeholder="https://www.facebook.com/...">
                 </div>
               </div>
               <div class="row collapse">
@@ -218,7 +235,7 @@
                   <span class="prefix radius">Instagram</span>
                 </div>
                 <div class="small-9 columns">
-                  <input type="text" id="instagram-url" placeholder="">
+                  <input type="text" id="instagram-url" placeholder="http://instagram.com/...">
                 </div>
               </div>
               <div class="row collapse">
@@ -226,7 +243,7 @@
                   <span class="prefix radius">Twitter</span>
                 </div>
                 <div class="small-9 columns">
-                  <input type="text" id="twitter-url" placeholder="">
+                  <input type="text" id="twitter-url" placeholder="https://twitter.com/...">
                 </div>
               </div>
             </fieldset>
@@ -234,7 +251,7 @@
 
           <section class="project-section">
             <fieldset class="section-settings panel radius">
-              <label class="unassigned">Contact/Copyright Information</label>
+              <label class="unassigned">Contact Information</label>
               <textarea rows="4">This should actually be a Pen editor.</textarea>
             </fieldset>
           </section>
