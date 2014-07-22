@@ -26,7 +26,7 @@ $('#shareabouts-switch').click(function() {
     $('.shareabouts-switch-target').toggle('fast');
 });
 
-$('.section-settings-toggle').click(function(event) {
+$('form').delegate('.section-settings-toggle', 'click', function(event) {
     event.preventDefault();
     $(this).parents('fieldset').find('.section-settings').toggleClass('hide');
 });
@@ -39,11 +39,11 @@ $('#add-call-to-action').click(function() {
     $('.call-to-action-buttons').toggle('fast');
 });
 
-$('input.textsection-twocolumn').click(function() {
+$('form').delegate('input.textsection-twocolumn', 'click', function() {
     $(this).parents('fieldset').find('.pen-container-1').removeClass('large-3').addClass('large-6');
     $(this).parents('fieldset').find('.pen-container-2').removeClass('large-9').addClass('large-6');
 });
-$('input.textsection-sidebar').click(function() {
+$('form').delegate('input.textsection-sidebar', 'click', function() {
     $(this).parents('fieldset').find('.pen-container-1').removeClass('large-6').addClass('large-3');
     $(this).parents('fieldset').find('.pen-container-2').removeClass('large-6').addClass('large-9');
 });
@@ -57,7 +57,7 @@ $('form').delegate('.add-image-section', 'click', function(event) {
     event.preventDefault();
 
     var thetime = $.now(),
-        section = $('.image-section .project-section').clone().attr( 'id', thetime );
+        section = $('.image-section .project-section').clone();
     $('ul', section).attr( 'id', 'section-type-selector-' + thetime );
     $('.section-insert .button', section).attr( 'data-dropdown', 'section-type-selector-' + thetime );
     section.insertAfter( $(this).parents('.project-section') );
@@ -69,9 +69,12 @@ $('form').delegate('.add-text-section', 'click', function(event) {
     event.preventDefault();
 
     var thetime = $.now(),
-        section = $('.text-section .project-section').clone().attr( 'id', thetime );
-    $('ul', section).attr( 'id', 'section-type-selector-' + thetime );
-    $('.section-insert .button', section).attr( 'data-dropdown', 'section-type-selector-' + thetime );
+        section = $('.text-section .project-section').clone();
+    $('.text-section-layouts input', section).attr( 'name', 'textsection-sidebar-' + thetime );
+    $('input.textsection-sidebar', section).attr( 'id', 'textsection-sidebar-' + thetime );
+    $('input.textsection-sidebar + label', section).attr( 'for', 'textsection-sidebar-' + thetime );
+    $('input.textsection-twocolumn', section).attr( 'id', 'textsection-twocolumn-' + thetime );
+    $('input.textsection-twocolumn + label', section).attr( 'for', 'textsection-twocolumn-' + thetime );
     section.insertAfter( $(this).parents('.project-section') );
 
     $('body').trigger('click');
