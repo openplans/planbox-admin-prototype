@@ -121,16 +121,15 @@
                 </div>
               </div>
             </fieldset>
-          </section>
-
-          <div class="section-insert">
-            <div class="row collapse full-width">
-              <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
-                <a href="#" class="button small expand radius" data-dropdown="section-type-selector">Add New Section</a>
-                <ul id="section-type-selector" class="f-dropdown" data-dropdown-content><li><a href="#">Text Section</a></li><li><a href="#">Image</a></li><li><a href="#">Timeline</a></li></ul>
-              </div><div class="small-2 medium-4 columns"><hr></div>
+            <div class="section-insert">
+              <div class="row collapse full-width">
+                <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
+                  <a href="#" class="button small expand radius" data-dropdown="section-type-selector-1">Add New Section</a>
+                  <ul id="section-type-selector-1" class="f-dropdown" data-dropdown-content><li><a href="#" class="add-text-section">Text Section</a></li><li><a href="#" class="add-image-section">Image</a></li><li><a href="#" class="add-timeline-section">Timeline</a></li></ul>
+                </div><div class="small-2 medium-4 columns"><hr></div>
+              </div>
             </div>
-          </div>
+          </section>
 
           <section class="project-section">
             <fieldset class="panel radius">
@@ -163,15 +162,15 @@
                 </div>
               </div>
             </fieldset>
-          </section>
-
-          <div class="section-insert">
-            <div class="row collapse full-width">
-              <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
-                <a href="#" class="button small expand radius" data-dropdown="section-type-selector">Add New Section</a>
-              </div><div class="small-2 medium-4 columns"><hr></div>
+            <div class="section-insert">
+              <div class="row collapse full-width">
+                <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
+                  <a href="#" class="button small expand radius" data-dropdown="section-type-selector-2">Add New Section</a>
+                  <ul id="section-type-selector-2" class="f-dropdown" data-dropdown-content><li><a href="#" class="add-text-section">Text Section</a></li><li><a href="#" class="add-image-section">Image</a></li><li><a href="#" class="add-timeline-section">Timeline</a></li></ul>
+                </div><div class="small-2 medium-4 columns"><hr></div>
+              </div>
             </div>
-          </div>
+          </section>
 
           <section class="project-section">
             <fieldset class="panel radius">
@@ -204,14 +203,81 @@
                 </div>
               </div>
             </fieldset>
+            <div class="section-insert">
+              <div class="row collapse full-width">
+                <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
+                  <a href="#" class="button small expand radius" data-dropdown="section-type-selector-3">Add New Section</a>
+                  <ul id="section-type-selector-3" class="f-dropdown" data-dropdown-content><li><a href="#" class="add-text-section">Text Section</a></li><li><a href="#" class="add-image-section">Image</a></li><li><a href="#" class="add-timeline-section">Timeline</a></li></ul>
+                </div><div class="small-2 medium-4 columns"><hr></div>
+              </div>
+            </div>
           </section>
 
-          <div class="section-insert">
-            <div class="row collapse full-width">
-              <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
-                <a href="#" class="button small expand radius" data-dropdown="section-type-selector">Add New Section</a>
-              </div><div class="small-2 medium-4 columns"><hr></div>
-            </div>
+          <!-- IMAGE SECTION -->
+          <div class="image-section hide">
+            <section class="project-section">
+              <fieldset class="section-settings panel radius">
+                <div class="cover-image-container">
+                  <img src="http://placehold.it/1280x720&text=image" class="cover-image">
+                  <div class="drag-area text-center">
+                    <p>Drop image here or&hellip;</p>
+                    <a href="#" class="button tiny radius">Choose File</a>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="section-insert">
+                <div class="row collapse full-width">
+                  <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
+                    <a href="#" class="button small expand radius" data-dropdown="section-type-selector-4">Add New Section</a>
+                    <ul id="section-type-selector-4" class="f-dropdown" data-dropdown-content><li><a href="#" class="add-text-section">Text Section</a></li><li><a href="#" class="add-image-section">Image</a></li><li><a href="#" class="add-timeline-section">Timeline</a></li></ul>
+                  </div><div class="small-2 medium-4 columns"><hr></div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- TEXT SECTION -->
+          <div class="text-section hide">
+            <section class="project-section">
+              <fieldset class="panel radius">
+                <div class="section-settings-toggle-container text-right"><a class="section-settings-toggle" href="#"><span class="icon gear"></span></a></div>
+                <div class="section-settings panel radius hide">
+                  <div class="row">
+                    <div class="medium-6 large-4 columns">
+                      <p class="radio-images text-section-layouts">
+                        <label class="unassigned">Layout</label>
+                        <input type="radio" name="textsection-2-layout" value="textsection-2-sidebar" class="textsection-sidebar" id="textsection-2-sidebar" checked="checked"><label for="textsection-2-sidebar"><img src="images/text-section-sidebar.gif"><small class="label-text">Sidebar</small></label>
+                        <input type="radio" name="textsection-2-layout" value="textsection-2-twocolumn" class="textsection-twocolumn" id="textsection-2-twocolumn"><label for="textsection-2-twocolumn"><img src="images/text-section-2col.gif"><small class="label-text">Two-Column</small></label>
+                      </p>
+                    </div>
+                    <div class="medium-6 large-8 columns">
+                      <label>Project Title
+                        <input type="text" id="textsection-2-slug" placeholder="Leave blank to exclude from menu" value="">
+                        </label>
+                    </div>
+                  </div>
+                </div>
+                <label>Section Heading
+                  <input type="text" placeholder="Section Heading" class="sub-heading-input" value="" />
+                </label>
+                <div class="row">
+                  <div class="large-3 columns pen-container-1">
+                    <textarea rows="10"></textarea>
+                  </div>
+                  <div class="large-9 columns pen-container-2">
+                    <textarea rows="10"></textarea>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="section-insert">
+                <div class="row collapse full-width">
+                  <div class="small-2 medium-4 columns"><hr></div><div class="small-8 medium-4 columns">
+                    <a href="#" class="button small expand radius" data-dropdown="section-type-selector-5">Add New Section</a>
+                    <ul id="section-type-selector-5" class="f-dropdown" data-dropdown-content><li><a href="#" class="add-text-section">Text Section</a></li><li><a href="#" class="add-image-section">Image</a></li><li><a href="#" class="add-timeline-section">Timeline</a></li></ul>
+                  </div><div class="small-2 medium-4 columns"><hr></div>
+                </div>
+              </div>
+            </section>
           </div>
 
           <section class="project-section">

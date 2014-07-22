@@ -52,3 +52,27 @@ $('#limited-text-1').keyup(function() {
     var len = $('#limited-text-1').val().length;
     $('#limited-text-1-counter').text( 99 - len );
 });
+
+$('form').delegate('.add-image-section', 'click', function(event) {
+    event.preventDefault();
+
+    var thetime = $.now(),
+        section = $('.image-section .project-section').clone().attr( 'id', thetime );
+    $('ul', section).attr( 'id', 'section-type-selector-' + thetime );
+    $('.section-insert .button', section).attr( 'data-dropdown', 'section-type-selector-' + thetime );
+    section.insertAfter( $(this).parents('.project-section') );
+
+    $('body').trigger('click');
+});
+
+$('form').delegate('.add-text-section', 'click', function(event) {
+    event.preventDefault();
+
+    var thetime = $.now(),
+        section = $('.text-section .project-section').clone().attr( 'id', thetime );
+    $('ul', section).attr( 'id', 'section-type-selector-' + thetime );
+    $('.section-insert .button', section).attr( 'data-dropdown', 'section-type-selector-' + thetime );
+    section.insertAfter( $(this).parents('.project-section') );
+
+    $('body').trigger('click');
+});
