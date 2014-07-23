@@ -32,7 +32,7 @@ $('form').delegate('.section-settings-toggle', 'click', function(event) {
 });
 
 $('.cover-image-switch').click(function() {
-    $('.cover-image-container').toggle('fast');
+    $(this).parents('fieldset').find('.cover-image-container').toggle('fast');
 });
 
 $('#add-call-to-action').click(function() {
