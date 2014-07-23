@@ -19,7 +19,7 @@ $('.new-member-button').click(function(event) {
 
 $('.project-settings-toggle').click(function(event) {
     event.preventDefault();
-    $('.project-setting').toggleClass('hide');
+    $('.project-setting').toggle('fast');
 });
 
 $('#shareabouts-switch').click(function() {
@@ -28,7 +28,7 @@ $('#shareabouts-switch').click(function() {
 
 $('form').delegate('.section-settings-toggle', 'click', function(event) {
     event.preventDefault();
-    $(this).parents('fieldset').find('.section-settings').toggleClass('hide');
+    $(this).parents('fieldset').find('.section-settings').toggle('fast');
 });
 
 $('.cover-image-switch').click(function() {
