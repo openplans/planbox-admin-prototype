@@ -1,0 +1,106 @@
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>Planbox Admin Prototype</title><meta name=description content=""><meta name=viewport content="width=device-width"><link rel="shortcut icon" href=/6df2b309.favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/484c985f.vendor.css><link rel=stylesheet href=styles/8df17fc1.main.css><script src=scripts/vendor/fbfb676d.modernizr.js></script><!-- Google Fonts --><link href="//fonts.googleapis.com/css?family=Bitter:400,700,400italic" rel=stylesheet type=text/css><body><!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><div class="-contain-to-grid sticky openplans-top-bar"><nav class=top-bar data-topbar=""><ul class=title-area><li class=name><h1><a href="/"><img src=//openplans.org/static/images/openplans-logo-hole.png class=openplans-logo-hole></a></h1></li><li class="toggle-topbar menu-icon"><a href=#>Menu</a></li></ul><section class=top-bar-section><ul class=right><li><a href="http://blog.openplans.org/">Blog</a></li><li><a href="http://community.openplans.org/">Community</a></li><li class="has-dropdown not-click"><a href="/about/">About</a><ul class=dropdown><li class="title back js-generated"><h5><a href=javascript:void(0)>Back</a></h5></li><li><a href="/about/">About OpenPlans</a></li><li><a href="/shareabouts/">Shareabouts</a></li><li><a href="/open-source/">Open Source</a></li></ul></li><li class="active has-dropdown not-click"><a href=index.html class=disabled><img class=avatar src=//pbs.twimg.com/profile_images/486195376077029377/U1cXHuNZ_400x400.jpeg>&nbsp;</a><ul class=dropdown><li><a href=index.html>andycochran</a></li><li><a href=#>Change Password</a></li><li><a href=#>Sign Out</a></li></ul></li></ul></section></nav></div><div class="row extra-margin-top extra-margin-bottom"><div class="large-3 columns"><div class=row><div class="small-4 medium-2 large-12 columns"><img class=avatar src=//pbs.twimg.com/profile_images/486195376077029377/U1cXHuNZ_400x400.jpeg></div><div class="small-8 medium-10 large-12 columns"><h3>andycochran</h3><p class=subheader>acochran@openplans.org</p></div></div></div><div class="large-9 columns"><!--
+        <div class="panel">
+          <h5 class="subheader page-list-header">Plans <a href="#" class="new-project-button button tiny right">+ New Plan</a></h5>
+          <form class="new-project hide extra-margin-top">
+            <div class="row">
+              <div class="small-3 medium-2 large-1 columns">
+                <label for="thetitle" class="inline">Title</label>
+              </div>
+              <div class="small-9 medium-10 large-11 columns">
+                <input id="thetitle" type="text" placeholder="Keep it short &amp; descriptive..." />
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-3 medium-2 large-1 columns">
+                <label for="theorg" class="inline">Owner</label>
+              </div>
+              <div class="small-9 medium-10 large-11 columns">
+                <select id="theorg">
+                  <option value="husker">andycochran</option>
+                  <option value="starbuck">My City DOT</option>
+                  <option value="hotdog">Some Other Organization</option>
+                  <option value="apollo">The Extremely Longnamed Organization</option>
+                </select>
+                <a href="project.html" class="button right">Create Plan</a>
+              </div>
+            </div>
+            <hr>
+          </form>
+          <ul class="no-bullet page-list">
+            <li class="clearfix">
+              <div class="row">
+                <div class="small-8 medium-9 columns">
+                  <a href="project.html" class="title"><strong>My Plans</strong><span class="icon pencil"></span></a>
+                  <span class="slug">
+                    openplans.org/andycochran/my-project/
+                    &mdash; <a href="#" class="" data-dropdown="drop2">Edit URL</a>
+                    <ul id="drop2" class="f-dropdown" data-dropdown-content>
+                      <li><a href="#">Change Slug</a></li>
+                      <li><a href="#">Add Custom Domain</a></li>
+                    </ul>
+                  </span>
+                </div>
+                <div class="small-4 medium-3 columns">
+                  <div class="switch right text-center">
+                    <input id="publishedID1" type="checkbox">
+                    <label for="publishedID1"></label>
+                    Published
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="row">
+                <div class="small-8 medium-9 columns">
+                  <a href="project.html" class="title"><strong>GR Forward</strong><span class="icon pencil"></span></a>
+                  <span class="slug">
+                    openplans.org/grforward/ | grforward.org
+                    &mdash; <a href="#" class="" data-dropdown="drop3">Edit URL</a>
+                    <ul id="drop3" class="f-dropdown" data-dropdown-content>
+                      <li><a href="#">Change Slug</a></li>
+                      <li><a href="#">Add Custom Domain</a></li>
+                    </ul>
+                  </span>
+                </div>
+                <div class="small-4 medium-3 columns">
+                  <div class="switch right text-center">
+                    <input id="publishedID2" type="checkbox" checked="checked">
+                    <label for="publishedID2"></label>
+                    Published
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="row">
+                <div class="small-8 medium-9 columns">
+                  <a href="project.html" class="title"><strong>Main Street Renovation</strong><span class="icon pencil"></span></a>
+                  <span class="slug">
+                    openplans.org/my-city-dot/main-street/
+                    &mdash; <a href="#" class="" data-dropdown="drop4">Edit URL</a>
+                    <ul id="drop4" class="f-dropdown" data-dropdown-content>
+                      <li><a href="#">Change Slug</a></li>
+                      <li><a href="#">Add Custom Domain</a></li>
+                    </ul>
+                  </span>
+                </div>
+                <div class="small-4 medium-3 columns">
+                  <div class="switch right text-center">
+                    <input id="publishedID3" type="checkbox">
+                    <label for="publishedID3"></label>
+                    Published
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+          --><div class=panel><h5 class="subheader page-list-header">Teams <a href=# class="new-org-button button tiny right">+ New Org</a></h5><form class="new-org hide extra-margin-top"><div class=row><div class="small-3 medium-2 large-1 columns"><label for=orgtitle class=inline>Name</label></div><div class="small-9 medium-10 large-11 columns"><input id=orgtitle type=text placeholder=""><button class="button right">Create Team</button></div></div><hr></form><ul class="no-bullet page-list"><li class=clearfix><div class=row><div class="small-8 medium-9 columns"><img class="avatar show-for-medium-up left" src="//placehold.it/400x400&text=DOT"> <a href=org.html class=title><strong>Streetscape</strong></a> <span class=slug>dot.nyc.gov/streetscape/</span></div><div class="small-4 medium-3 columns"><div class="tally text-center right"><span class=count>3</span> <small class=unit>Members</small></div></div></div></li><li class=clearfix><div class=row><div class="small-8 medium-9 columns"><img class="avatar show-for-medium-up left" src="//placehold.it/400x400&text=DOT"> <a href=org.html class=title><strong>Milling and Paving</strong></a> <span class=slug>dot.nyc.gov/milling</span></div><div class="small-4 medium-3 columns"><div class="tally text-center right"><span class=count>14</span> <small class=unit>Members</small></div></div></div></li><li class=clearfix><div class=row><div class="small-8 medium-9 columns"><img class="avatar show-for-medium-up left" src="//placehold.it/400x400&text=DOT"> <a href=org.html class=title><strong>Plaza Program</strong></a> <span class=slug>dot.nyc.gov/plazas</span></div><div class="small-4 medium-3 columns"><div class="tally text-center right"><span class=count>1</span> <small class=unit>Member</small></div></div></div></li></ul></div></div></div><script src=scripts/44014985.vendor.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src=scripts/cd6c4353.main.js></script>
