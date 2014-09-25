@@ -219,11 +219,21 @@
                 <div class="small-12 large-8 columns">
                   <div class="post">
                     <input type="text" placeholder="Untitled Post" class="sub-heading-input" value="" />
-                    <div class="section-switch switch left">
+                    <div class="post-publish-switch section-switch switch left">
                       <input id="post-publish-switch" type="checkbox">
                       <label for="post-publish-switch"></label>
                     </div>
-                    <label class="inline unassigned">UNPUBLISHED&nbsp;/&nbsp;DRAFT</label>
+                    <label class="post-publish-off inline unassigned">UNPUBLISHED&nbsp;/&nbsp;DRAFT</label>
+                    <div class="post-publish-on hide" style="margin-left:5rem;">
+                      <div class="row collapse">
+                        <div class="small-10 columns">
+                          <input type="text" id="" placeholder="Post Date">
+                        </div>
+                        <div class="small-2 columns">
+                          <span class="postfix radius"><img src="https://openplans.org/static/images/icon-calendar.png" style="height:1rem;width:auto;"></span>
+                        </div>
+                      </div>
+                    </div>
                     <textarea class="no-resize" rows="15"></textarea>
                   </div>
                   <a href="#" class="button alert tiny round">Delete Post</a>

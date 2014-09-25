@@ -7,6 +7,11 @@ $('.new-project-button').click(function(event) {
     $('.new-project').removeClass('hide');
 });
 
+$('.post-publish-switch label').click(function() {
+    $('.post-publish-off').toggleClass('hide');
+    $('.post-publish-on').toggleClass('hide');
+});
+
 $('.new-org-button').click(function(event) {
     event.preventDefault();
     $('.new-org').removeClass('hide');
