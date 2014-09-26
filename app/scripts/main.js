@@ -12,6 +12,22 @@ $('.post-publish-switch label').click(function() {
     $('.post-publish-on').toggleClass('hide');
 });
 
+$('.post-now a').click(function(event) {
+    event.preventDefault();
+    $('.post-publish-on span').addClass('hide');
+    $('.post-in-future').removeClass('hide');
+});
+$('.post-in-future a').click(function(event) {
+    event.preventDefault();
+    $('.post-publish-on span').addClass('hide');
+    $('.post-in-past').removeClass('hide');
+});
+$('.post-in-past a').click(function(event) {
+    event.preventDefault();
+    $('.post-publish-on span').addClass('hide');
+    $('.post-now').removeClass('hide');
+});
+
 $('.new-org-button').click(function(event) {
     event.preventDefault();
     $('.new-org').removeClass('hide');

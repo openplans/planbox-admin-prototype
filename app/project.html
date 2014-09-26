@@ -223,17 +223,12 @@
                       <input id="post-publish-switch" type="checkbox">
                       <label for="post-publish-switch"></label>
                     </div>
-                    <label class="post-publish-off inline unassigned">UNPUBLISHED&nbsp;/&nbsp;DRAFT</label>
-                    <div class="post-publish-on hide" style="margin-left:5rem;">
-                      <div class="row collapse">
-                        <div class="small-10 columns">
-                          <input type="text" id="" placeholder="Post Date">
-                        </div>
-                        <div class="small-2 columns">
-                          <span class="postfix radius"><img src="https://openplans.org/static/images/icon-calendar.png" style="height:1rem;width:auto;"></span>
-                        </div>
-                      </div>
-                    </div>
+                    <label class="post-publish-off inline unassigned">DRAFT</label>
+                    <label class="post-publish-on inline unassigned hide" style="margin-top:-0.5rem;line-height:1.2;">
+                      <span class="post-now">To be posted when you save.<br><small><a href="#"><strong>CHOOSE&nbsp;DATE/TIME</strong></a></small></span>
+                      <span class="post-in-future hide">To be posted on November 5, 2014 at 10:00AM.<br><small><a href="#"><strong>CHOOSE&nbsp;DATE/TIME</strong></a></small></span>
+                      <span class="post-in-past hide">Posted on August 25, 2014 at 5:12PM.<br><small><a href="#"><strong>CHOOSE&nbsp;DATE/TIME</strong></a></small></span>
+                    </label>
                     <textarea class="no-resize" rows="15"></textarea>
                   </div>
                   <a href="#" class="button alert tiny round">Delete Post</a>
@@ -250,11 +245,11 @@
                   <ul class="post-list no-bullet">
                     <li>
                       <h6 class="post-title">Untitled Post</h6>
-                      <span class="post-date">Unpublished / Draft</span>
+                      <span class="post-date">Draft</span>
                     </li>
                     <li>
                       <h6 class="post-title"><a href="#">Community Input Shows Much Support</a></h6>
-                      <span class="post-date">September 1, 2014 at 2:04PM</span>
+                      <span class="post-date" style="color:#ff8b38;">Scheduled: November 1, 2014 at 2:04PM</span>
                     </li>
                     <li>
                       <h6 class="post-title"><a href="#">Project Kick-off Recap</a></h6>
