@@ -16,12 +16,6 @@
   max-width: initial;
 }
 
-.tabs-content {
-  background: #fff;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
 
 /* OpenPlans Top Bar */
 
@@ -393,5 +387,21 @@ textarea.no-resize {
   font-style: italic;
   display: block;
   margin-bottom: 0.75rem;
+}
+
+
+// Tabs
+.tabs {
+  border-left: 1px solid #efefef;
+}
+.tab-title a {
+  outline: 0;
+  border-top: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+.tabs-content {
+  background: #fff;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
